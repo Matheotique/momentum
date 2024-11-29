@@ -1,0 +1,17 @@
+.weather  {
+  display:flex
+}
+.temperatur {
+
+  color: red;
+}
+#degrees {
+    color: black;
+}
+.icon {
+position: middle;
+
+}
+.ville  {
+  position:  middle;
+}
