@@ -11,6 +11,8 @@ body {
   flex-wrap: wrap;
 }
 .weather  {
+  position: relative;
+  left: -35vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
