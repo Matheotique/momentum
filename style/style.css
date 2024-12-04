@@ -1,7 +1,7 @@
 body {
+  color: rgb(255, 255, 255);
   background-origin: border-box ;
-  background-image: local ;
-  background-size: contain;
+  background: no-repeat center/100% url("/fond d'écran momentum/wallpaper.jpg") ;
   height:100vh;
   display:flex;
   justify-content: space-between;
@@ -21,14 +21,14 @@ body {
 }
 .temperatur {
   display:flex;
-  color: red;
+  color: red
 }
 #degrees {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .icon {
   position: middle;
-
+  color: rgb(255, 255, 255);
 }
 .ville  {
   position:  middle;
