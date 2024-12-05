@@ -33,6 +33,7 @@ body {
   position:  middle;
 }
 .date {
+  font-size: larger;
   display:flex;
 }
 .hour {
