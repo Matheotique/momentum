@@ -44,6 +44,7 @@ body {
  flex-direction: row;
  justify-content: center;
 }
+.hour div {font-size: 5em;}
 .search {
   display:flex;
   flex-direction: row;
