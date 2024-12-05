@@ -57,3 +57,7 @@ body {
 .historic {
   display: flex;
 }
+.historic div {font-size: 1em;}
+.historic:nth-child(-n+3) {
+  margin-right: .2em;
+}
