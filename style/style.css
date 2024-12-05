@@ -1,6 +1,6 @@
 body {
   color: rgb(255, 255, 255);
-  background-origin: border-box ;
+  margin: 0px;
   background: no-repeat center/100% url("/fond d'écran momentum/wallpaper.jpg") ;
   height:100vh;
   display:flex;
