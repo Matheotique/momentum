@@ -33,9 +33,12 @@ body {
   position:  middle;
 }
 .date {
-  font-size: larger;
   display:flex;
 }
+.date :nth-child(-n+3)  {
+  margin-right: .2em;
+}
+.date div {font-size: 2em;}
 .hour {
  display:flex;
  flex-direction: row;
