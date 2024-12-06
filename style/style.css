@@ -44,7 +44,7 @@ body {
  flex-direction: row;
  justify-content: center;
 }
-.hour :nth-child(-n+3)  {
+.hour :nth-child(-n+2)  {
   margin-right: .3em;
 }
 .hour div {font-size: 5em;}
@@ -56,8 +56,10 @@ body {
 .search {font-size: 4em;}
 .historic {
   display: flex;
+  justify-content: center;
 }
-.historic div {font-size: 1em;}
-.historic:nth-child(-n+3) {
+.historic :nth-child(-n+3) {
   margin-right: .2em;
 }
+.historic div {font-size: 1em;}
+
