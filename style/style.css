@@ -35,7 +35,7 @@ body {
 .date {
   display:flex;
 }
-.date :nth-child(-n+3)  {
+.date :nth-child(-n+4)  {
   margin-right: .2em;
 }
 .date div {font-size: 2em;}
