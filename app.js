@@ -5,7 +5,7 @@ console.log("hello world");
 
 const jourSemaine = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi' ]
 
-const moisAnnee = [ 'janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'décembre'] 
+const moisAnnee = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'décembre'] 
 
 
 let dateDuJour = new Date();
@@ -14,6 +14,8 @@ console.log(dateDuJour);
 let hours = dateDuJour.getHours();
 console.log(hours + ' heure');
 let minutes = dateDuJour.getMinutes();
+// let x = document.querySelector("#hour");
+// x.innerHTML = hours + " : " + minutes;
 document.querySelector("#hour").innerHTML = hours + " : " + minutes;
 
 // resultat: 10:53
