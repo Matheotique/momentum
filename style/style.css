@@ -20,7 +20,7 @@ body {
 }
 .temperatur {
   display:flex;
-  color: red
+  font-size:2rem;
 }
 #degrees {
     color: rgb(255, 255, 255);
@@ -30,7 +30,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .ville  {
-  position:  middle;
+  font-size: 1.8rem;
 }
 .date {
   display:flex;
@@ -53,13 +53,26 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-.search {font-size: 4em;}
+.search input{
+  background-color: white;
+  padding: 3% 12%;
+  font-size: 2em;
+  border-radius: 2rem;
+}
+
 .historic {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 20 vw;
 }
 .historic :nth-child(-n+3) {
   margin-right: .2em;
 }
 .historic div {font-size: 1em;}
+.story {
+  background-color: whitesmoke;
+  width: 4vw;
+  height: 8vh;
+  border-radius: 50%;
+}
 
