@@ -18,18 +18,18 @@ body {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-.temperatur {
+#temperatur {
   display:flex;
   font-size:2rem;
 }
 #degrees {
     color: rgb(255, 255, 255);
 }
-.icon {
+#icon {
   position: middle;
   color: rgb(255, 255, 255);
 }
-.ville  {
+#ville  {
   font-size: 1.8rem;
 }
 .date {

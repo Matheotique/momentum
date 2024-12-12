@@ -59,6 +59,7 @@ $(document).ready(function () {
 		$("#month").html(moisAnnee[month]);
 		let year = thisDay.getFullYear();
 		$("#year").html(year);
+  
 
 	// dateDuJour.getFullYear()
   // $("#year").html(year);
