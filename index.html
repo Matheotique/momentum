@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>matheotique</title>
     <link href="/style/style.css" rel="stylesheet" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+      defer
+    ></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -23,9 +27,9 @@
       <!-- date -->
       <div class="date">
         <!-- jour -->
-         <div id="day"></div>
+        <div id="day"></div>
         <!-- numero du jour -->
-         <div id="jour"></div>
+        <div id="jour"></div>
         <!-- mois -->
         <div id="month"></div>
         <!-- année -->
@@ -35,7 +39,11 @@
     <!-- main -->
     <main>
       <!-- heure -->
-      <div id="hour"></div>
+      <div id="time">
+        <div id="hours"></div>
+        <div id="inter">:</div>
+        <div id="minutes"></div>
+      </div>
       <!-- barre de recherche -->
       <div class="search">
         <input type="text" size="10" placeholder="recherche..." />
