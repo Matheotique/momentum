@@ -50,8 +50,7 @@ $(document).ready(function () {
 		let minutes = new Date().getMinutes();
     $("#hours").html((hours < 10 ? "0" : "") + hours);
     $("#minutes").html((minutes < 10 ? "0" : "") + minutes);
-  }, 1000);
-		let day = thisDay.getDay();
+    let day = thisDay.getDay();
 		$("#day").html(jourSemaine[day]);
 		let numberDay = thisDay.getUTCDate();
 		$("#jour").html(numberDay);
@@ -59,6 +58,8 @@ $(document).ready(function () {
 		$("#month").html(moisAnnee[month]);
 		let year = thisDay.getFullYear();
 		$("#year").html(year);
+  }, 1000);
+		
   
 
 	// dateDuJour.getFullYear()
