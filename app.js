@@ -1,8 +1,3 @@
-console.log("hello world");
-
-// Date.now(2)
-// var heureMinutesSeconde = Date.now(2);5
-
 const jourSemaine = [
   "dimanche",
   "lundi",
@@ -27,34 +22,32 @@ const moisAnnee = [
   "novembre",
   "décembre",
 ];
-//http://api.weatherapi.com/v1/current.json?key=90f98e6e09bc425ca3695906241312&q=London&aqi=no
 
-var options = {
-  enableHighAccuracy: false,
-  timeout: 5000,
-  maximumAge: 0,
-};
+navigator.geolocation.getCurrentPosition((position) => {
 
-function success(pos) {
-  var crd = pos.coords;
+  const key = "90f98e6e09bc425ca3695906241312";
+  const uri = "http://api.weatherapi.com/v1/current.json";
+  let urlApi = uri + "?key=" + key + "&q=" + position.coords.latitude + "," + position.coords.longitude;
+  console.log(urlApi);
 
-  console.log("Votre position actuelle est :");
-  console.log(`Latitude : ${crd.latitude}`);
-  console.log(`Longitude : ${crd.longitude}`);
-  console.log(`La précision est de ${crd.accuracy} mètres.`);
-}
+  $.getJSON(urlApi, function(data) {
 
-function error(err) {
-  console.warn(`ERREUR (${err.code}): ${err.message}`);
-}
+    // City
+    let cityName = data.location.name
+    console.log(cityName);
+    $("#city").append(cityName);
 
-navigator.geolocation.getCurrentPosition(success, error, options);
+    // Température
+    let temp = data.current.temp_c
+    console.log(temp);
+    $("#temperatur").append(temp);
 
+    let pict = data.current.condition.icon
+    console.log("https:" + pict);
+    // $("#icon").append(pict);
+  });
+});
 
-
-const key = "90f98e6e09bc425ca3695906241312"
-const uri = "http://api.weatherapi.com/v1/current.json?key=90f98e6e09bc425ca3695906241312&q=43.6048462,1.442848"
-let resultat 
 
 // let dateDuJour = new Date();
 // console.log(dateDuJour);
