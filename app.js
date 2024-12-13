@@ -27,6 +27,34 @@ const moisAnnee = [
   "novembre",
   "décembre",
 ];
+//http://api.weatherapi.com/v1/current.json?key=90f98e6e09bc425ca3695906241312&q=London&aqi=no
+
+var options = {
+  enableHighAccuracy: false,
+  timeout: 5000,
+  maximumAge: 0,
+};
+
+function success(pos) {
+  var crd = pos.coords;
+
+  console.log("Votre position actuelle est :");
+  console.log(`Latitude : ${crd.latitude}`);
+  console.log(`Longitude : ${crd.longitude}`);
+  console.log(`La précision est de ${crd.accuracy} mètres.`);
+}
+
+function error(err) {
+  console.warn(`ERREUR (${err.code}): ${err.message}`);
+}
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+
+const key = "90f98e6e09bc425ca3695906241312"
+const uri = "http://api.weatherapi.com/v1/current.json?key=90f98e6e09bc425ca3695906241312&q=43.6048462,1.442848"
+let resultat 
 
 // let dateDuJour = new Date();
 // console.log(dateDuJour);
