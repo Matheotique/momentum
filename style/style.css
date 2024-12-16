@@ -22,9 +22,6 @@ body {
   display:flex;
   font-size:2rem;
 }
-#degrees {
-    color: rgb(255, 255, 255);
-}
 #icon {
   position: middle;
   color: rgb(255, 255, 255);
@@ -72,5 +69,8 @@ body {
   width: 4vw;
   height: 8vh;
   border-radius: 50%;
+}
+.linkmail {
+color: white;
 }
 

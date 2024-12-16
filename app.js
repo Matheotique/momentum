@@ -38,16 +38,15 @@ navigator.geolocation.getCurrentPosition((position) => {
     $("#city").append(cityName);
 
     // Température
-    let temp = data.current.temp_c
+    let temp = Math.round(data.current.temp_c)
     console.log(temp);
-    $("#temperatur").append(temp);
+    $("#temperatur").append(temp + "°C");
 
     let pict = data.current.condition.icon
-    console.log("https:" + pict);
-    // $("#icon").append(pict);
+    console.log(pict);
+    $("#icon").append("<img src=" + '"' + "https:" + pict + '"' + ">" );
   });
 });
-
 
 // let dateDuJour = new Date();
 // console.log(dateDuJour);
