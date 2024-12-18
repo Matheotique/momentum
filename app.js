@@ -106,3 +106,16 @@ $(document).ready(function () {
 
 // resultat tuesday 26 december 2024
 // console.log(day + " " + jour + " " + month + " " + year);
+
+
+// RECHERCHE GOOGLE
+$(form)
+.submit(
+  function submitted(event) {
+    let contenu = document.getElementById("search");
+    event.preventDefault();
+    const url = "https://www.google/search?q=" + contenu.value;
+    const win = window.open(url, `blank`);
+    win.focus();
+  }
+)

@@ -1,9 +1,9 @@
 body {
   color: rgb(255, 255, 255);
   margin: 0px;
-  background: no-repeat center url("/fond d'écran momentum/wallpaper.jpg") ;
-  height:100vh;
-  display:flex;
+  background: no-repeat center url("/fond d'écran momentum/wallpaper.jpg");
+  height: 100vh;
+  display: flex;
   justify-content: space-between;
   align-content: center;
   flex-direction: column;
@@ -11,54 +11,46 @@ body {
   flex-wrap: wrap;
 }
 header {
-display:flex;
-width: 100%;
+  width: 100%;
 }
-.weather  {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
+/* .weather {} */
 #temperatur {
-  display:flex;
-  font-size:2rem;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
 }
 #degrees {
 }
 #icon {
   color: rgb(255, 255, 255);
 }
-#ville  {
-  font-size: 1.8rem;
+#city {
+  font-size: 1.5rem;
 }
-main { 
+main {
   display: flex;
   flex-direction: column;
-
-
 }
 .date {
-  display:flex;
+  display: flex;
   font-size: 2em;
 }
-.date :nth-child(-n+4)  {
-  margin-right: .2em;
+.date :nth-child(-n + 4) {
+  margin-right: 0.2em;
 }
 #time {
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items:center;
- font-size: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
 }
 .search {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.search input{
+.search input {
   background-color: white;
   padding: 3% 12%;
   font-size: 2em;
@@ -70,10 +62,12 @@ main {
   justify-content: space-between;
   width: 20 vw;
 }
-.historic :nth-child(-n+3) {
-  margin-right: .2em;
+.historic :nth-child(-n + 3) {
+  margin-right: 0.2em;
 }
-.historic div {font-size: 1em;}
+.historic div {
+  font-size: 1em;
+}
 .story {
   background-color: whitesmoke;
   width: 4vw;
@@ -81,10 +75,7 @@ main {
   border-radius: 50%;
 }
 footer {
-
-  
 }
 .linkmail {
-color: white;
+  color: white;
 }
-

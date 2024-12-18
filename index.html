@@ -16,13 +16,13 @@
     <!-- header -->
     <header>
       <!-- météo -->
-      <div class="weather">
+      <!-- <div class="weather"> -->
         <div id="temperatur">
           <div id="icon"></div>
           <div id="degrees"></div>
         </div>
         <div id="city"></div>
-      </div>
+      <!-- </div> -->
     </header>
     <!-- main -->
     <main>
@@ -45,7 +45,9 @@
       </div>
       <!-- barre de recherche -->
       <div class="search">
-        <input type="text" size="10" placeholder="recherche..." />
+        <form method="get" id="form">
+          <input id="search" type="text" onfocus="this.value=''" placeholder="Rechercher..." />
+        </form>
       </div>
       <!-- historique des recherches -->
       <div class="historic">
