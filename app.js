@@ -40,7 +40,7 @@ navigator.geolocation.getCurrentPosition((position) => {
     // Température
     let temp = Math.round(data.current.temp_c)
     console.log(temp);
-    $("#temperatur").append(temp + "°C");
+    $("#degrees").append(temp + "°C");
 
     let pict = data.current.condition.icon
     console.log(pict);

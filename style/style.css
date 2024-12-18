@@ -1,7 +1,7 @@
 body {
   color: rgb(255, 255, 255);
   margin: 0px;
-  background: no-repeat center/100% url("/fond d'écran momentum/wallpaper.jpg") ;
+  background: no-repeat center url("/fond d'écran momentum/wallpaper.jpg") ;
   height:100vh;
   display:flex;
   justify-content: space-between;
@@ -10,14 +10,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.header {
-display:flex
-
-
+header {
+display:flex;
+width: 100%;
 }
 .weather  {
   position: relative;
-  left: -35vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -27,14 +25,17 @@ display:flex
   display:flex;
   font-size:2rem;
 }
+#degrees {
+}
 #icon {
-  position: middle;
   color: rgb(255, 255, 255);
 }
 #ville  {
   font-size: 1.8rem;
 }
-.main {
+main { 
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -79,7 +80,7 @@ display:flex
   height: 8vh;
   border-radius: 50%;
 }
-.footer {
+footer {
 
   
 }
