@@ -34,6 +34,8 @@ main {
 .date {
   display: flex;
   font-size: 2em;
+  justify-content: center;
+  flex-direction: row;
 }
 .date :nth-child(-n + 4) {
   margin-right: 0.2em;
@@ -50,6 +52,12 @@ main {
   flex-direction: row;
   justify-content: center;
 }
+#form {
+  display: flex;
+  justify-content: center;
+
+
+}
 .search input {
   background-color: white;
   padding: 3% 12%;
@@ -64,6 +72,9 @@ main {
 }
 .historic :nth-child(-n + 3) {
   margin-right: 0.2em;
+}
+.historic :nth-child(-n + 3)  {
+margin-top: 1.2em;
 }
 .historic div {
   font-size: 1em;
