@@ -1,7 +1,7 @@
 body {
   color: rgb(255, 255, 255);
   margin: 0px;
-  background: no-repeat center url("/fond d'écran momentum/wallpaper.jpg");
+  background: no-repeat center url("/style/media/wallpaper.jpg");
   height: 100vh;
   display: flex;
   justify-content: space-between;
