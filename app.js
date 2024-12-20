@@ -114,7 +114,7 @@ $(form)
   function submitted(event) {
     let contenu = document.getElementById("search");
     event.preventDefault();
-    const url = "https://www.google/search?q=" + contenu.value;
+    const url = "https://www.google.com/search?q=" + contenu.value;
     const win = window.open(url, `blank`);
     win.focus();
   }

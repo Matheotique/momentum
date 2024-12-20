@@ -70,24 +70,24 @@ main {
   border-radius: 2rem;
 }
 
-.historic {
-  display: flex;
-  justify-content: space-between;
-  width: 20 vw;
-}
+/* .historic { */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* width: 20 vw; */
+/* } */
 
-.historic :nth-child(-n + 3) {
-  margin-right: 0.2em;
-  margin-top: 1.2em;
-}
+/* .historic :nth-child(-n + 3) { */
+  /* margin-right: 0.2em; */
+  /* margin-top: 1.2em; */
+/* } */
 
-.story {
-  font-size: 1em;
-  background-color: whitesmoke;
-  width: 4vw;
-  height: 8vh;
-  border-radius: 50%;
-}
+/* .story { */
+  /* font-size: 1em; */
+  /* background-color: whitesmoke; */
+  /* width: 4vw; */
+  /* height: 8vh; */
+  /* border-radius: 50%; */
+/* } */
 .linkmail {
   color: white;
 }
