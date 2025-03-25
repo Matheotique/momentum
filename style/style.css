@@ -1,0 +1,93 @@
+body {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  background: no-repeat center url("/style/media/wallpaper.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+}
+
+#temperatur {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#icon {
+  color: rgb(255, 255, 255);
+}
+
+#city {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.date :nth-child(-n + 4) {
+  margin-right: 0.2em;
+}
+
+#time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  background-color: white;
+  padding: 3% 12%;
+  font-size: 2em;
+  border-radius: 2rem;
+}
+
+/* .historic { */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* width: 20 vw; */
+/* } */
+
+/* .historic :nth-child(-n + 3) { */
+  /* margin-right: 0.2em; */
+  /* margin-top: 1.2em; */
+/* } */
+
+/* .story { */
+  /* font-size: 1em; */
+  /* background-color: whitesmoke; */
+  /* width: 4vw; */
+  /* height: 8vh; */
+  /* border-radius: 50%; */
+/* } */
+.linkmail {
+  color: white;
+}
